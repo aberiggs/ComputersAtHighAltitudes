@@ -31,16 +31,16 @@ for a in range(0,iterations):
   for i in range(0,tries):
     for x in range(1,1000):
       3.141592 * 2**x
-    for x in range(1,10000):
+    for x in range(1,1000):
       float(x) / 3.141592
-    for x in range(1,10000):
+    for x in range(1,1000):
       float(3.141592) / x
 
-  ende = time.time()
-  dauer = (ende - start)
-  dauer = round(dauer, 3)
-  schnitt += dauer
-  print('Time: ' + str(dauer) + 's')
+  end = time.time()
+  duration = (end - start)
+  duration = round(duration, 3)
+  schnitt += duration
+  print('Time: ' + str(duration) + 's')
 
 schnitt = round(schnitt / iterations, 3)
 print('Average: ' + str(schnitt) + 's')
