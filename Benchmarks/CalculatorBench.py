@@ -40,7 +40,7 @@ for a in range(0,iterations):
   duration = (end - start)
   duration = round(duration, 3)
   schnitt += duration
-  print('Time: ' + str(dauer) + 's')
+  print('Time: ' + str(duration) + 's')
 
 schnitt = round(schnitt / iterations, 3)
 print('Average: ' + str(schnitt) + 's')
