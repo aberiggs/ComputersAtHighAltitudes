@@ -36,9 +36,9 @@ for a in range(0,iterations):
     for x in range(1,1000):
       float(3.141592) / x
 
-  ende = time.time()
-  dauer = (ende - start)
-  dauer = round(dauer, 3)
+  end = time.time()
+  duration = (end - start)
+  duration = round(duration, 3)
   schnitt += dauer
   print('Time: ' + str(dauer) + 's')
 
