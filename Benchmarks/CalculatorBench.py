@@ -39,7 +39,7 @@ for a in range(0,iterations):
   end = time.time()
   duration = (end - start)
   duration = round(duration, 3)
-  schnitt += dauer
+  schnitt += duration
   print('Time: ' + str(dauer) + 's')
 
 schnitt = round(schnitt / iterations, 3)
