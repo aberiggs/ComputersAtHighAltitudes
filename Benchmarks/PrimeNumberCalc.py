@@ -1,5 +1,8 @@
-lowerLimit = 100000
-upperLimit = 1000000
+import time
+start_time = time.time()
+
+lowerLimit = 1
+upperLimit = 1000
 
 print("Prime numbers between", lowerLimit, "and", upperLimit, "are:")
 
@@ -10,3 +13,6 @@ for i in range(lowerLimit, upperLimit+1):
                 break
         else:
             print(i)
+
+#TODO: Make sure that the timer is accurate.
+print("prime numbers found in %s seconds" % (time.time() - start_time))
