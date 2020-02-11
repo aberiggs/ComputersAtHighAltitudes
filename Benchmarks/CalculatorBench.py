@@ -1,3 +1,5 @@
+##modified code from https://github.com/Noxmiles/Python-CPU-Benchmark
+
 import time
 import platform
 
@@ -22,7 +24,7 @@ iterations = input( 'How many iterations? [def=10] ')
 if iterations == '': iterations = 10
 iterations = int(iterations)
 
-schnitt = 0
+bleh = 0
 
 for a in range(0,iterations):
 
@@ -39,8 +41,8 @@ for a in range(0,iterations):
   end = time.time()
   duration = (end - start)
   duration = round(duration, 3)
-  schnitt += duration
+  bleh += duration
   print('Time: ' + str(duration) + 's')
 
-schnitt = round(schnitt / iterations, 3)
-print('Average: ' + str(schnitt) + 's')
+bleh = round(bleh / iterations, 3)
+print('Average: ' + str(bleh) + 's')
