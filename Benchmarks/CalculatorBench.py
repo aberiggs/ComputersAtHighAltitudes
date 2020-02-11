@@ -12,12 +12,6 @@ if "Linux" == platform.system():
                 model_name = line.rstrip('\n').split(':')[1]
                 print(model_name)
                 break
-#if "Windows" == platform.system():
-#  print('Processor:')
- # with open('/proc/cpuinfo') as f:
- #   for line in f:
- ##       if line.strip():
- ####              break
 else:
   print('Your CPU is only shown automatic on Linux system.')
 
@@ -49,4 +43,4 @@ for a in range(0,iterations):
   print('Time: ' + str(duration) + 's')
 
 bleh = round(bleh / iterations, 3)
-print('Average: ' + str(schnitt) + 's')
+print('Average: ' + str(bleh) + 's')
