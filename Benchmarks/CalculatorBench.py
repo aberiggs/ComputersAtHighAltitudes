@@ -26,10 +26,8 @@ if iterations == '': iterations = 5
 iterations = int(iterations)
 
 bleh = 0
-
 for a in range(0,iterations):
-
-  start = time.time()
+	start = time.time()
 
   for i in range(0,tries):
     for x in range(1,1000):
