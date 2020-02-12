@@ -1,6 +1,7 @@
 ##modified code from https://github.com/Noxmiles/Python-CPU-Benchmark
 
 import time
+
 import platform
 
 print('Simple Python Benchmark for measureing the CPU speed.')
@@ -32,6 +33,7 @@ for a in range(0,iterations):
 
   for i in range(0,tries):
     for x in range(1,1000):
+      
       3.141592 * 2**x
     for x in range(1,1000):
       float(x) / 3.141592
