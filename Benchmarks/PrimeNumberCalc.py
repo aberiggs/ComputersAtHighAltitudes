@@ -1,3 +1,4 @@
+#Originally from https://www.programiz.com/python-programming/examples/prime-number-intervals
 import time
 start_time = time.time()
 
