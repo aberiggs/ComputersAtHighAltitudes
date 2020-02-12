@@ -22,7 +22,7 @@ tries = input( '\nHow many tries per iteration? [def=1000] ')
 if tries == '': tries = 1000
 tries = int(tries)
 iterations = input( 'How many iterations? [def=10] ')
-if iterations == '': iterations = 10
+if iterations == '': iterations = 5
 iterations = int(iterations)
 
 bleh = 0
