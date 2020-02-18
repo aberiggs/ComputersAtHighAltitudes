@@ -2,8 +2,8 @@
 import time
 start_time = time.time()
 
-lowerLimit = 1
-upperLimit = 1000
+lowerLimit = 5000
+upperLimit = 25000
 
 print("Prime numbers between", lowerLimit, "and", upperLimit, "are:")
 
