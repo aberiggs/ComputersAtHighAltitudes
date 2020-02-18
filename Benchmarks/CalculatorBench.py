@@ -1,6 +1,7 @@
 ##modified code from https://github.com/Noxmiles/Python-CPU-Benchmark
 
 import time
+
 import platform
 
 print('Simple Python Benchmark for measureing the CPU speed.')
@@ -21,17 +22,16 @@ tries = input( '\nHow many tries per iteration? [def=1000] ')
 if tries == '': tries = 1000
 tries = int(tries)
 iterations = input( 'How many iterations? [def=10] ')
-if iterations == '': iterations = 10
+if iterations == '': iterations = 5
 iterations = int(iterations)
 
 bleh = 0
-
 for a in range(0,iterations):
-
-  start = time.time()
+	start = time.time()
 
   for i in range(0,tries):
     for x in range(1,1000):
+      
       3.141592 * 2**x
     for x in range(1,1000):
       float(x) / 3.141592
