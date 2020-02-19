@@ -4,20 +4,6 @@ import time
 
 import platform
 
-print('Simple Python Benchmark for measureing the CPU speed.')
-
-if "Linux" == platform.system():
-  print('Processor:')
-  with open('/proc/cpuinfo') as f:
-    for line in f:
-        if line.strip():
-            if line.rstrip('\n').startswith('model name'):
-                model_name = line.rstrip('\n').split(':')[1]
-                print(model_name)
-                break
-else:
-  print('Your CPU is only shown automatic on Linux system.')
-
 tries = input( '\nHow many tries per iteration? [def=1000] ')
 if tries == '': tries = 1000
 tries = int(tries)
