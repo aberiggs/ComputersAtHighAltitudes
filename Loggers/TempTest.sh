@@ -39,18 +39,3 @@ EHLO="1"
         echo "CPU Core 0: ${CORE_0} C" >> ${LOGFILE}
         echo "CPU Core 1: ${CORE_1} C"
         echo "CPU Core 1: ${CORE_1} C" >> ${LOGFILE}
-
-
-
-## CHECK THE RETURN VALUE FROM EACH CORE; IF NEEDED SEND NOTIFICATION
-
-        if [ "${CORE_0}" -gt ${HIGH} ] || [ ${CORE_1} -gt ${HIGH} ]; 
-                then
-        ## SET VARIABLE FOR EMAIL
-                SUBJECT="***WARNING*** FOR HIGH TEMP FROM ${HOSTNAME} NUC"
-                DATA="Dear User,\r\n\r\nThe temperature for CPU is HIGH: ${CORE_0}C & ${CORE_1}C\r\nPlease Monitor this Machine closer.\r\n\r\nNB Team"
-                email
-                echo "THE TEMPERATURE IS HIGH" >> ${LOGFILE}
-                echo "NOTIFICATION SENT" >> ${LOGFILE}
-                echo "THE TEMPERATURE IS HIGH" 
-        fi
