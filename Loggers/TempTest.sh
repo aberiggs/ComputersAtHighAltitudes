@@ -27,15 +27,12 @@ EHLO="1"
 
 ## READ CPU TEMP ##
 
-        CORE_0=$(sensors | grep 'Core 0' | awk '{print int($3)}')
-        CORE_1=$(sensors | grep 'Core 1' | awk '{print int($3)}')
+        CPU_0=$(vcgencmd measure_temp)
 
 ## ECHO VALUE
 
         echo "TIME: $NOW"
         echo "###########################" >> ${LOGFILE}
         echo "TIME: $NOW" >> ${LOGFILE}
-        echo "CPU Core 0: ${CORE_0} C"
-        echo "CPU Core 0: ${CORE_0} C" >> ${LOGFILE}
-        echo "CPU Core 1: ${CORE_1} C"
-        echo "CPU Core 1: ${CORE_1} C" >> ${LOGFILE}
+        echo "CPU: ${CPU_0} C"
+        echo "CPU: ${CPU_0} C" >> ${LOGFILE}
