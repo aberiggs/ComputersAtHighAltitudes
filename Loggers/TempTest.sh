@@ -5,7 +5,7 @@
 
 NOW=$(date +"%d-%m-%Y-%T")
 
-LOGFILE="/var/log/sensor_temp.log"
+LOGFILE="~/Desktop/ComputersAtHighAltitudes/Loggers/sensor_temp.log"
 
 
 ## THRESHOLDFOR NOTIFICATIONS ##
@@ -25,14 +25,19 @@ EHLO="1"
 
         hash sensors 2>/dev/null || { echo >&2 "It requires sensor but it's not installed.  Aborting now."; exit 1; }
 
-## READ CPU TEMP ##
+for i in {20}
+do
+        ## READ CPU TEMP ##
 
-        CPU_0=$(vcgencmd measure_temp)
+                CPU_0=$(vcgencmd measure_temp)
 
-## ECHO VALUE
+        ## ECHO VALUE
 
-        echo "TIME: $NOW"
-        echo "###########################" >> ${LOGFILE}
-        echo "TIME: $NOW" >> ${LOGFILE}
-        echo "CPU: ${CPU_0} C"
-        echo "CPU: ${CPU_0} C" >> ${LOGFILE}
+                echo "TIME: $NOW"
+                echo "###########################" >> ${LOGFILE}
+                echo "TIME: $NOW" >> ${LOGFILE}
+                echo "CPU: ${CPU_0} C"
+                echo "CPU: ${CPU_0} C" >> ${LOGFILE}
+                
+                sleep 5
+done
