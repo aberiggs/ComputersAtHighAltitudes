@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOGFILE="home/rpi/Desktop/Data/"
+LOGFILE="/home/pi/Desktop/Data/TEMP-TEMP_LOG.log"
 
 ## IF HELO SET TO 0 ##
 EHLO="1"
