@@ -1,7 +1,5 @@
 ##modified code from https://github.com/Noxmiles/Python-CPU-Benchmark
-
 import time
-
 import platform
 
 tries = input( '\nHow many tries per iteration? [def=1000] ')
